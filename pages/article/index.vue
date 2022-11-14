@@ -38,6 +38,18 @@
 
 <style scoped lang="scss">
 $lime: #00e87c;
+
+.tabs {
+  > ul > li > a {
+    color: gray;
+  }
+}
+.is-active {
+  > a {
+    color: black !important;
+    border-color: black !important;
+  }
+}
 .control {
   position: relative;
 

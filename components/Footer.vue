@@ -57,6 +57,7 @@ $lime: #00e87c;
   :hover {
     background-color: $lime;
     cursor: pointer;
+    border-radius: 5px;
   }
 }
 

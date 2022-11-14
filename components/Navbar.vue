@@ -44,10 +44,17 @@ $lime: #00e87c;
   color: gray;
   padding-inline: 20px;
   border-radius: 5px;
+  background-color: transparent;
 
   &:hover {
     background-color: $lime;
     color: black;
+  }
+
+  &:focus {
+    background-color: $lime;
+    color: black;
+    outline: 2px solid black;
   }
 }
 </style>

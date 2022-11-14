@@ -6,6 +6,36 @@
     </div>
   </section>
 
+  <section class="section" style="padding-bottom: 0 !important">
+    <div class="container block">
+      <div class="columns">
+        <div class="column is-half-tablet is-one-quarter-fullhd">
+          <img src="~/public/andikahang.jpg" alt="" class="is3by2" />
+        </div>
+        <div class="column">
+          <div class="block patua title is-4">Andika : Software Engineer</div>
+          <div class="block heebo">
+            <b> Software Engineer /`sôf(t)wer ˌenjə`nir/, </b>
+            <span>
+              adalah ahli yang bertugas merancang, mengembangkan, mengelola, menguji, hingga mengevaluasi perangkat
+              lunak komputer (software).
+            </span>
+          </div>
+          <div class="block heebo">
+            <ul class="list">
+              <li>Mengembangkan sistem informasi dengan merancang, memgembangkan, dan menginstal perangkat lunak.</li>
+              <li>
+                Mengembangkan perangkat lunak sesuai kebutuhan pengguna dengan mempelajari proses kerja dan pengguna
+                data.
+              </li>
+              <li>Mengidentifikasi masalah di perangkat lunak dan melakukan perbaikan sistem.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container block">
       <div class="columns">
@@ -40,6 +70,11 @@
 $lime: #00e87c;
 $grey: #cdcdcd;
 
+.list {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
 .tabs {
   > ul > li > a {
     color: gray;
@@ -63,6 +98,7 @@ $grey: #cdcdcd;
     background-color: var(--lightblue);
     border: none;
     border-radius: 5px;
+    transition: 0.3s all;
     &:hover {
       cursor: pointer;
       background-color: $lime;
