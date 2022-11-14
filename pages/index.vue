@@ -1,7 +1,7 @@
 <template>
   <section class="section bg-lightblue">
     <div class="container block has-text-centered">
-      <h1 class="title is-3 heebo-black">Andika's Dungeon</h1>
+      <h1 class="title is-3 patua">Andika's Dungeon</h1>
       <h2 class="subtitle heebo block pt-4 has-text-grey">Just a random blog with random posts from a random guy.</h2>
     </div>
   </section>

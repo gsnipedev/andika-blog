@@ -1,6 +1,6 @@
 <template>
   <footer class="footer bg-lightblue">
-    <div class="columns patua is-centered">
+    <div class="columns patua is-centered is-multiline">
       <div class="column">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -41,8 +41,8 @@
 <style scoped lang="scss">
 $lime: #00e87c;
 
-.level-item {
-  border-radius: 5px;
+.footer {
+  padding: 3rem 1.5rem 3rem;
 }
 
 .column {

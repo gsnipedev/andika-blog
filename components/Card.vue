@@ -10,11 +10,11 @@ export default {
   <div class="card">
     <div class="card-image">
       <figure class="image is-3by2">
-        <img src="https://picsum.photos/200" alt="Placeholder image" />
+        <img src="~/public/andikapeace.jpg" alt="Placeholder image" />
       </figure>
     </div>
-    <div class="box bg-lightblue mt-2 bebas">#Programming</div>
-    <div class="title is-5 patua">The nemesis on my way</div>
+    <div class="box bg-lightblue mt-2 bebas">#School</div>
+    <div class="title is-5 patua">The Peace Out</div>
     <div class="card-content">
       <div class="content">
         {{ textContent }}

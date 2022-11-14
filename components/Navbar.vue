@@ -15,9 +15,10 @@
 
       <div id="mainNavbar" class="navbar-menu heebo">
         <div class="navbar-end">
-          <a class="navbar-item is-active"> Home </a>
-          <a class="navbar-item"> Contact </a>
-          <a class="navbar-item"> About </a>
+          <a class="navbar-item" href="/"> Home </a>
+          <a class="navbar-item" href="article"> Article </a>
+          <a class="navbar-item" href="contact"> Contact </a>
+          <a class="navbar-item" href="about"> About </a>
         </div>
       </div>
     </nav>
@@ -26,10 +27,13 @@
 
 <style scoped lang="scss">
 $lime: #00e87c;
-.navbar-item:hover {
-  background-color: $lime;
-  border-radius: 5px;
-  color: black;
+.navbar-item {
   font-weight: 600;
+  color: gray;
+
+  &:hover {
+    background-color: $lime;
+    color: black;
+  }
 }
 </style>
