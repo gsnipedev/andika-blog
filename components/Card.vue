@@ -3,6 +3,11 @@ export default {
   props: {
     textContent: String,
   },
+  methods: {
+    ReadArticle() {
+      window.location.href = "article/1";
+    },
+  },
 };
 </script>
 
@@ -22,7 +27,7 @@ export default {
         <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
       </div>
     </div>
-    <button class="button patua">Read More</button>
+    <button class="button patua" @click="ReadArticle">Read More</button>
   </div>
 </template>
 

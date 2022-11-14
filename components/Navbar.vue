@@ -3,7 +3,7 @@
     <nav class="navbar container p-2 bg-none" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <span class="title is-4 heebo-black">Andika W.</span>
+          <span class="title is-4 patua">Andika W.</span>
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#mainNavbar">
@@ -27,9 +27,15 @@
 
 <style scoped lang="scss">
 $lime: #00e87c;
+
+.navbar-end {
+  padding-block: 10px;
+}
 .navbar-item {
   font-weight: 600;
   color: gray;
+  padding-inline: 20px;
+  border-radius: 5px;
 
   &:hover {
     background-color: $lime;

@@ -8,13 +8,21 @@
 
   <section class="section">
     <div class="container block">
-      <div class="tabs heebo">
-        <ul>
-          <li class="is-active"><a>All</a></li>
-          <li><a>School</a></li>
-          <li><a>Programming</a></li>
-          <li><a>Associates</a></li>
-        </ul>
+      <div class="columns">
+        <div class="tabs heebo column">
+          <ul>
+            <li class="is-active"><a>All</a></li>
+            <li><a>School</a></li>
+            <li><a>Programming</a></li>
+            <li><a>Associates</a></li>
+          </ul>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="control">
+            <input class="input heebo" type="text" placeholder="Search for articles" />
+            <button class="patua">Search</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -28,4 +36,33 @@
   </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+$lime: #00e87c;
+.control {
+  position: relative;
+
+  > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    padding-inline: 1.5rem;
+    background-color: var(--lightblue);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      background-color: $lime;
+    }
+  }
+
+  > input {
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    padding-right: 100px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+</style>
