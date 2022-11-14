@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+.heebo {
+  font-family: "Heebo", sans-serif;
+}
+
+.heebo-light {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+
+.heebo-bold {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+}
+
+.heebo-black {
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+}
+
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.patua {
+  font-family: "Patua One", cursive;
+}
+
+.bg-lightblue {
+  background-color: #e1f2fe !important;
+}
+.bg-none {
+  background-color: transparent !important;
+}
