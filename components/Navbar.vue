@@ -7,9 +7,9 @@
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#mainNavbar">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
         </a>
       </div>
 
@@ -28,6 +28,14 @@
 <style scoped lang="scss">
 $lime: #00e87c;
 
+.navbar-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1023px) {
+    display: none;
+  }
+}
 .navbar-end {
   padding-block: 10px;
 }

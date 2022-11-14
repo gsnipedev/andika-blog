@@ -9,7 +9,7 @@
   <section class="section">
     <div class="container block">
       <div class="columns">
-        <div class="tabs heebo column">
+        <div class="tabs patua column">
           <ul>
             <li class="is-active"><a>All</a></li>
             <li><a>School</a></li>
@@ -17,7 +17,7 @@
             <li><a>Associates</a></li>
           </ul>
         </div>
-        <div class="column is-one-quarter">
+        <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
           <div class="control">
             <input class="input heebo" type="text" placeholder="Search for articles" />
             <button class="patua">Search</button>

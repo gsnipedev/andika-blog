@@ -27,7 +27,9 @@ export default {
         <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
       </div>
     </div>
-    <button class="button patua" @click="ReadArticle">Read More</button>
+    <div class="card-action">
+      <button class="button patua" @click="ReadArticle">Read More</button>
+    </div>
   </div>
 </template>
 
@@ -59,5 +61,12 @@ $lime: #00e87c;
 
 .button {
   background-color: $lime;
+}
+
+.card-action {
+  text-align: center;
+  @media (min-width: 576px) {
+    text-align: left;
+  }
 }
 </style>
