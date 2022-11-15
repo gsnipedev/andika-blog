@@ -81,7 +81,7 @@ export default {
     <div class="container">
       <div class="columns">
         <div class="column is-one-third contact-image">
-          <img src="images/peace_square.jpg" alt="" class="is1by1" />
+          <img src="/images/peace_square.jpg" alt="" class="is1by1" />
         </div>
 
         <div class="column">
