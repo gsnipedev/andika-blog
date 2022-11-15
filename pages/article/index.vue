@@ -1,9 +1,6 @@
 <template>
   <section class="section bg-lightblue">
-    <div class="container block has-text-centered">
-      <h1 class="title is-3 patua">Articles</h1>
-      <h2 class="subtitle heebo block pt-4 has-text-grey">Is a place where to read some random posts.</h2>
-    </div>
+    <TopSection title="Articles" sub="Is a place where to read some random posts." />
   </section>
 
   <section class="section">

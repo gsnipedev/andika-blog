@@ -15,7 +15,7 @@ export default {
   <div class="card">
     <div class="card-image">
       <figure class="image is-3by2">
-        <img src="/andikapeace.jpg" alt="Placeholder image" />
+        <img src="/images/andikapeace.jpg" alt="Placeholder image" />
       </figure>
     </div>
     <div class="box bg-lightblue mt-2 bebas">#School</div>

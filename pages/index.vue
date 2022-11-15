@@ -1,16 +1,13 @@
 <template>
   <section class="section bg-lightblue">
-    <div class="container block has-text-centered">
-      <h1 class="title is-3 patua">Andika's Dungeon</h1>
-      <h2 class="subtitle heebo block pt-4 has-text-grey">Just a random blog with random posts from a random guy.</h2>
-    </div>
+    <TopSection title="Andika's Dungeon" sub="Just a random blog with random posts from a random guy." />
   </section>
 
   <section class="section" style="padding-bottom: 0 !important">
     <div class="container block">
       <div class="columns">
         <div class="column is-half-tablet is-one-quarter-fullhd">
-          <img src="/andikahang.jpg" alt="" class="is3by2" />
+          <img src="images/andikahang.jpg" alt="" class="is3by2" />
         </div>
         <div class="column">
           <div class="block patua title is-4">Andika : Software Engineer</div>

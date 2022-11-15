@@ -1,7 +1,23 @@
+<script>
+export default {
+  methods: {
+    GotoGithub() {
+      window.location.href = "https://github.com/gsnipedev";
+    },
+    GotoIG() {
+      window.location.href = "https://www.instagram.com/andika_wahyudi_/";
+    },
+    GotoSO() {
+      window.location.href = "https://stackoverflow.com/users/18949341/andika-wahyudi";
+    },
+  },
+};
+</script>
+
 <template>
   <footer class="footer bg-lightblue">
     <div class="columns patua is-centered is-multiline">
-      <div class="column">
+      <div class="column" @click="GotoGithub">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
@@ -11,7 +27,7 @@
         Github
       </div>
 
-      <div class="column">
+      <div class="column" @click="GotoIG">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
@@ -21,7 +37,7 @@
         Instagram
       </div>
 
-      <div class="column">
+      <div class="column" @click="GotoSO">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"

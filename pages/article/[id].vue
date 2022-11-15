@@ -5,7 +5,7 @@
       <div class="block">
         <span class="mainsubtitle subtitle heebo"> Lorem ipsum dolor sit amet adipsicing consectetur elit </span>
       </div>
-      <img src="~/public/andikapeace.jpg" alt="Article main image" class="block" />
+      <img src="/images/andikapeace.jpg" alt="Article main image" class="block" />
       <div class="block heebo">
         <b>The Peace Out</b>
         Diambil dari simbol peace, adalah simbol dari beberapa momen penting dalam sejarah, dan masih signifikan hingga
