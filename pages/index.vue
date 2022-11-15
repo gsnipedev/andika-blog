@@ -7,7 +7,7 @@
     <div class="container block">
       <div class="columns">
         <div class="column is-half-tablet is-one-quarter-fullhd">
-          <img src="images/andikahang.jpg" alt="" class="is3by2" />
+          <img src="/images/andikahang.jpg" alt="" class="is3by2" />
         </div>
         <div class="column">
           <div class="block patua title is-4">Andika : Software Engineer</div>
