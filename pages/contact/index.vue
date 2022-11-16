@@ -10,8 +10,12 @@ export default {
     HitPhone() {
       window.open("tel:+6282382878591");
     },
-    SubmitLetter() {
-      alert(this.firstname + " " + this.lastname + " " + this.message);
+    SubmitLetter(e) {
+      e.preventDefault();
+      this.ShowDrawer();
+    },
+    ShowDrawer() {
+      this.$refs.drawer.toggleOn(this.firstname, this.lastname);
     },
   },
 
@@ -26,6 +30,7 @@ export default {
 </script>
 
 <template>
+  <BottomDrawer ref="drawer" />
   <section class="section bg-lightblue">
     <TopSection title="Contact" sub="Any question?" />
   </section>
@@ -48,7 +53,7 @@ export default {
           </div>
         </div>
         <div class="column">
-          <form @submit="SubmitLetter">
+          <form @submit="(e) => SubmitLetter(e)">
             <div class="columns">
               <div class="column">
                 <div class="field">
@@ -79,7 +84,7 @@ export default {
               ></textarea>
               <div>
                 <span :class="{ 'max-limit': message.length === 1000 }"> {{ message.length }}/1000 </span>
-                <button class="button patua">Submit</button>
+                <button type="submit" class="button patua">Submit</button>
               </div>
             </div>
           </form>
