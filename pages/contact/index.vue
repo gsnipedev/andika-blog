@@ -7,7 +7,9 @@ export default {
     HitEmail() {
       window.location.href = "mailto:andikawpb200@gmail.com";
     },
-
+    HitPhone() {
+      window.open("tel:+6282382878591");
+    },
     SubmitLetter() {
       alert(this.firstname + " " + this.lastname + " " + this.message);
     },
@@ -25,19 +27,28 @@ export default {
 
 <template>
   <section class="section bg-lightblue">
-    <TopSection title="Contact" sub="Any question? please let me know!" />
+    <TopSection title="Contact" sub="Any question?" />
   </section>
 
   <section class="section">
-    <div class="container">
-      <form @submit="SubmitLetter">
-        <div class="columns is-multiline">
-          <div class="column is-full-tablet is-one-third-desktop">
-            <div class="block has-text-centered">
-              <span class="title is-3 patua">Compose a Letter</span>
-            </div>
+    <div class="container letter-composer">
+      <div class="columns is-multiline">
+        <div class="column is-one-third-tablet is-half-desktop">
+          <div class="block">
+            <span class="title is-1 patua">Message Me</span>
           </div>
-          <div class="column">
+          <div class="block">
+            <span class="heebo">
+              Any questions regarding my blog, collaboration, or my site in general? Looking for web developer, and or
+              another type of software development? Do not hesitate to compose a letter to me.
+            </span>
+          </div>
+          <div class="block">
+            <span class="heebo"> Or alternatively you could use my contacts below. </span>
+          </div>
+        </div>
+        <div class="column">
+          <form @submit="SubmitLetter">
             <div class="columns">
               <div class="column">
                 <div class="field">
@@ -66,14 +77,14 @@ export default {
                 maxlength="1000"
                 v-model="message"
               ></textarea>
+              <div>
+                <span :class="{ 'max-limit': message.length === 1000 }"> {{ message.length }}/1000 </span>
+                <button class="button patua">Submit</button>
+              </div>
             </div>
-            <div>
-              <span :class="{ 'max-limit': message.length === 1000 }"> {{ message.length }}/1000 </span>
-              <button class="button patua">Submit</button>
-            </div>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   </section>
 
@@ -130,7 +141,7 @@ export default {
           </div>
         </div>
         <div class="column">
-          <div class="box">
+          <div class="box" @click="HitPhone">
             <table>
               <tbody>
                 <tr>
