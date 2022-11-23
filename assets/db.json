@@ -1,0 +1,24 @@
+{
+  "project": [
+    {
+      "desc": "The place where i share my stories, article, or something you want to read.",
+      "url": "https://andika-blog.vercel.app",
+      "status": "dev"
+    },
+    {
+      "desc": "For internet citizen to communicate each other, internet is for everyone.",
+      "url": "",
+      "status": "dev"
+    },
+    {
+      "desc": "Mobile version of netheve, same functionality but its native on Android.",
+      "url": "",
+      "status": "dev"
+    },
+    {
+      "desc": "Desktop version of netheve, same functionality but its native on Windows.",
+      "url": "",
+      "status": "dev"
+    }
+  ]
+}
