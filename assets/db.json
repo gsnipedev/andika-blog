@@ -20,5 +20,14 @@
       "url": "",
       "status": "dev"
     }
+  ],
+  "article": [
+    {
+      "title": "The Girl",
+      "subtitle": "That Girl",
+      "imgsource": "/images/andikawgirl.jpg",
+      "content": "Random pic with classmates",
+      "tag": "school"
+    }
   ]
 }

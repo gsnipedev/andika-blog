@@ -1,11 +1,15 @@
 <script>
 export default {
   props: {
+    title: String,
     textContent: String,
+    cTag: String,
+    id: Number,
+    img: String,
   },
   methods: {
     ReadArticle() {
-      window.location.href = "article/1";
+      navigateTo("article/" + String(this.id));
     },
   },
 };
@@ -15,11 +19,11 @@ export default {
   <div class="card">
     <div class="card-image">
       <figure class="image is-3by2">
-        <img src="/images/andikapeace.jpg" alt="Placeholder image" />
+        <img :src="img" alt="Placeholder image" class="image" />
       </figure>
     </div>
-    <div class="box bg-lightblue mt-2 bebas">#School</div>
-    <div class="title is-5 patua">The Peace Out</div>
+    <div class="box bg-lightblue mt-2 bebas">#{{ cTag }}</div>
+    <div class="title is-5 patua">{{ title }}</div>
     <div class="card-content">
       <div class="content">
         {{ textContent }}
@@ -35,6 +39,10 @@ export default {
 
 <style lang="scss">
 $lime: #00e87c;
+
+.image {
+  object-fit: cover;
+}
 
 .card {
   box-shadow: none;

@@ -1,3 +1,15 @@
+<script>
+import { article } from "assets/db.json";
+
+export default {
+  data() {
+    return {
+      article,
+    };
+  },
+};
+</script>
+
 <template>
   <section class="section bg-lightblue">
     <TopSection title="Andika's Dungeon" sub="Just a random blog with random posts from a random guy." />
@@ -55,8 +67,8 @@
 
     <div class="container block">
       <div class="columns is-multiline">
-        <div class="column is-one-quarter-fullhd is-one-third-desktop is-half-tablet" v-for="i in 4">
-          <Card textContent="Lorem ipsum dolor sit amet, adipsicing elit consectetur" />
+        <div class="column is-one-quarter-fullhd is-one-third-desktop is-half-tablet" v-for="(data, index) in article">
+          <Card :id="index" :textContent="data.subtitle" :cTag="data.tag" :title="data.title" :img="data.imgsource" />
         </div>
       </div>
     </div>
