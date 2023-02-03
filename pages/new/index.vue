@@ -1,16 +1,10 @@
-<script setup>
-import { db } from "utils/index";
-import { collection, getDocs } from "firebase/firestore";
-
-const querySnapshot = await getDocs(collection(db, "articles"));
-</script>
+<script setup></script>
 
 <script>
 export default {
   data() {
     return {
       textWatcher: "",
-      artdata: querySnapshot,
     };
   },
   setup: {},
